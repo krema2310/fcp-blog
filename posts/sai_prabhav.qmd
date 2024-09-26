@@ -8,7 +8,7 @@ date: 2024-09-26
 
 Hello! My name is Sai Prabhav. I am a student In ISI and love programming.
 
-[github](/images/sai_prabhav.jpg)
+[github](https://github.com/Sai-Prabhav)
 [reddit](https://www.reddit.com/user/saiprabhav/)
 
-![](https://github.com/Sai-Prabhav)
+![](images/sai_prabhav.jpg)
