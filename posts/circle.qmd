@@ -2,8 +2,13 @@
 title: A Circle
 author: Anand
 date: 2024-09-26
+filters:
+   - include-code-files
 ---
 
 This is a circle created using a c program.
+
+```{.c include="src/circle.c"}
+```
 
 ![](images/circle.svg)
