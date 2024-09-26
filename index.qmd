@@ -1,0 +1,6 @@
+---
+title: "FCP Blog"
+listing:
+    contents: posts
+    type: grid
+---

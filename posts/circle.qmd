@@ -1,0 +1,9 @@
+---
+title: A Circle
+author: Anand
+date: 2024-09-26
+---
+
+This is a circle created using a c program.
+
+![](images/circle.svg)
