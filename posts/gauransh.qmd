@@ -1,0 +1,11 @@
+---
+title: Hello from Gauransh
+author: Gauransh
+date: 2024-09-26
+---
+
+![](images/image.jpeg)
+
+Hello! My name is Gauransh. I am a B.Math (first year) student at ISI Bangalore. I like playing chess, table tennis, writing poems and listening to music.
+
+Website: https://anandology.com/

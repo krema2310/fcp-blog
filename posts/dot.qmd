@@ -1,0 +1,26 @@
+---
+title: A Dot
+author: V Sai Prabhav
+date: 2024-09-26
+---
+
+This is a dot created using a c program.
+
+```c
+#include <sketch.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char const *argv[])
+{   
+ set_fill("black");
+ draw_circle(0,0,10);
+ save_sketch("dot.svg");
+    return 0;
+}
+```
+
+![](images/dot.svg)
