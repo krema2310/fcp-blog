@@ -1,0 +1,11 @@
+---
+title: Hello from Anand2
+author: Anand2
+date: 2024-09-26
+---
+
+![](images/anand-cover.jpg)
+
+Hello! My name is Anand. I'm helping Prof. Jishnu teach the Fundamentals of Computer Programming Course.
+
+website: https://anandology.com/
