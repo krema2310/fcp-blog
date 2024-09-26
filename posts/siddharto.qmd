@@ -1,0 +1,11 @@
+---
+title: Hello from Siddharto
+author: Siddharto
+date: 2024-09-26
+---
+
+![](images/siddharto.png)
+
+Hello, I am Siddharto Das. I am studying the Fundamentals of Computing course.
+
+I am on [GitHub](https://github.com/siddharto-das).
