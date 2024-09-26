@@ -1,0 +1,52 @@
+---
+title: Normal distribution and Binomial distribution
+author: Priyankar Biswas
+date: 2024-09-26
+---
+
+Hello !
+
+!()[images/plot.svg]
+
+
+```
+#include <stdio.h>
+#include <math.h>
+#include <sketch.h>
+
+#define N 100
+#define W 800
+
+
+double bnc(int n, int k)
+{
+    double p=1.0;
+    if(2 * k > n)
+    k = n - k;
+    while(k != 0)
+    p *= 1.0 * (n--) / (k--);
+    return p;
+}
+
+double gnd(double x, double variance) {
+    return exp(-x*x*N*N/(2*W*W*variance));
+}
+
+int main()
+{
+    int f;
+    double high = bnc(N,N/2)/200;
+    set_stroke("red");
+    for (f=0; f<=N; f++) {
+    draw_circle(f*W/N-W/2,bnc(N,f)/high-100,0.5);
+    }
+    
+    set_stroke("blue");
+    set_stroke_width(0.5);
+    double x;
+    double var = N/4;
+    for(x=-W;x<=W;x=x+0.1)
+    draw_line(x,200*gnd(x,var)-100,x+0.1,200*gnd(x+0.1,var)-100);
+    save_sketch("plot.svg");
+}
+```
