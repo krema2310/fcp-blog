@@ -1,0 +1,79 @@
+---
+title: Dragon Curve
+author: Arkaprovo Das
+date: 2024-09-26
+---
+
+![](images/dragonspiral.svg)
+
+This is a dragon curve written in c using c sketch
+
+website: https://anandology.com/
+
+CODE
+
+```
+#include <stdio.h>
+#include <sketch.h>
+
+int power(int a , int b)
+{
+    int i,p=1;
+    if (b==0)
+    return 1;
+    for (i=1;i<=b;i++)
+    p=p*a;
+    return p;
+}
+
+int ds(int n,int d)
+{
+    int i,k,x=50,y=-100;
+    int a[power(2,n)];
+    a[0]=1;
+    a[1]=2;
+    for (i=1;i<=n-1;i++)
+    {
+        for (k=power(2,i);k<=power(2,i+1)-1;k++)
+        {
+            if (k<=3*power(2,i-1)-1)
+            {
+                a[k]=-a[k-power(2,i)];
+            }
+            else
+            {
+                a[k]=a[k-power(2,i)];
+            }
+        }   
+    }
+    for (k=0;k<=power(2,n)-1;k++)
+    {
+        if (a[k]==1)
+        {
+            y=y+d;
+            draw_line(x,y-d,x,y);
+        }
+        else if (a[k]==2)
+        {
+            x=x+d;
+            draw_line(x-d,y,x,y);
+        }
+        else if (a[k]==-1)
+        {
+            y=y-d;
+            draw_line(x,y+d,x,y);
+        }
+        else if (a[k]==-2)
+        {
+            x=x-d;
+            draw_line(x+d,y,x,y);
+        }
+    }
+    save_sketch("dragonspiral.svg");
+}
+
+int main(void)
+{
+    ds(15,2);
+}
+```

@@ -1,0 +1,49 @@
+---
+title: Mengers Sponge in 2D
+author: Arkaprovo Das
+date: 2024-09-26
+---
+
+![](images/spo.svg)
+
+This is mengers sponge in 2D written in c using c sketch
+
+website: https://anandology.com/
+
+CODE
+
+```
+#include <stdio.h>
+#include <sketch.h>
+#include <unistd.h>
+
+void sponge(double x, double y, double size, int depth)
+{
+    if (depth==0)
+    {
+        draw_rectangle(x,y,size,size);
+    }
+    else
+    {
+        double s = size/3;
+    set_fill("black");
+    sponge(x-s, y,s, depth-1);
+    sponge(x+s, y,s, depth-1);
+    sponge(x,y-s, s, depth-1);
+    sponge(x,y+s, s, depth-1);
+    sponge(x-s, y-s, s, depth-1);
+    sponge(x-s, y+s, s, depth-1);
+    sponge(x+s, y-s, s, depth-1);
+    sponge(x+s, y+s, s, depth-1);
+    }
+    
+}
+
+int main (void)
+{
+
+    sponge(0,0,600,5);
+    save_sketch("spo.svg");
+
+}
+```
