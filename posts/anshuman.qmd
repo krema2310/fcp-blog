@@ -1,0 +1,11 @@
+---
+title: Hello from Anshuman
+author: Anshuman
+date: 2024-09-26
+---
+
+![](images/mandelbrot-set.png)
+
+Hello! My name is Anshuman. I'm Anshuman student at Indian Statistical Institute Banglore.
+
+website: https://anandology.com/
